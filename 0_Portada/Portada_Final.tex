@@ -1,0 +1,42 @@
+%% Formato de Tesis para Posgrado en Ingeniería
+%% de la Universidad Nacional Autónoma de México
+%% Hoovertec mayo 2012
+\documentclass{tesisfc}
+%% Consulta la referencia del manual para ver las
+%% opciones disponibles.
+
+
+\usepackage[utf8]{inputenc}
+\usepackage[spanish]{babel}
+
+
+\topmargin=-1.5cm
+\newenvironment{changemargin}[2]{%
+\begin{list}{}{%
+\setlength{\topsep}{0pt}%
+\setlength{\leftmargin}{#1}%
+\setlength{\rightmargin}{#2}%
+\setlength{\listparindent}{\parindent}%
+\setlength{\itemindent}{\parindent}%
+\setlength{\parsep}{\parskip}%
+}%
+\item[]}{\end{list}}
+
+%%Estos datos aparecerï¿½n en la portada y los encabezados
+\titulo{Este es el título de la tesis}
+\nombre{Nombre de estudiante}
+\carrera{Ingeniera Carrera}
+\asesor{Nombre de asesora}
+\presidente{Presidente}
+\secretario{Secretaria}
+\suplentea{Suplente a}
+\suplenteb{Suplente b}
+\fecha{20aa}
+%\clearpage
+%\newpage
+\begin{document}
+%% Aqui inserta el texto de tu tesis
+\newpage
+\thispagestyle{empty}
+\hspace{12pt}
+\end{document}

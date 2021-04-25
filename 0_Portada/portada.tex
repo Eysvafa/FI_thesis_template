@@ -1,0 +1,106 @@
+% - FALTA HOJA DE AGRADECIMIENTOS
+% - FALTA HOJA DE TITULO ¿?
+% - Versión configurable de la portada
+%  - Corregir numeración (dar reset)
+
+\thispagestyle{empty}
+\usepackage{setspace}
+
+%% Barra izquierda - Escudos
+\hskip-1.1cm
+\begin{minipage}[c][10cm][s]{4cm}
+  \begin{center}
+    \includegraphics[height=3.6cm]{unam_negro}\\[20pt]
+    \hskip2pt
+    \vrule width1.2pt height 14.5cm\hskip2mm
+    %\vrule width1pt height 14.5cm
+    \hskip4mm
+    \vrule width1.2pt height 14.5cm\\[13pt]\hskip2mm
+
+     \includegraphics[height=4.1cm]{FIUNAM_negro}
+  \end{center}
+\end{minipage}\quad
+%% Barra derecha - Títulos
+\begin{minipage}[c][9.5cm][s]{12.5cm}
+  \begin{center}
+    % Barra superior
+    \vspace{4mm}
+    {\large \textbf{UNIVERSIDAD NACIONAL AUTÓNOMA DE MÉXICO}}
+    \vspace{.25cm}
+    \hrule height1.2pt
+    \vspace{.15cm}
+    %\hrule height1.6pt
+
+    {\large \textbf{FACULTAD DE INGENIERÍA}}
+
+    % Titulo del trabajo
+    \vspace{2.8cm}
+
+    \begin{spacing}{2.0}
+    {\LARGE \textbf{\eltitulo}}
+    \end{spacing}
+
+    \vspace{2.9cm}
+
+    % Tipo de trabajo
+    \makebox[1.9cm][s]{\Large \textbf{T E S I S}}\\[8pt]
+    {\large Que para obtener el título de}\\[8pt]
+    {\Large \textbf{\lacarrera}}\\
+    \vspace{2.2cm}
+    %INGENIERÍA ELÉCTRICA - CONTROL\\[6pt]
+    {\Large \textbf{P R E S E N T A}}\\[8pt]
+    {\Large\elnombre}
+
+    \vspace{2.2cm}
+
+    {\Large \textbf{DIRECTORA DE TESIS}}\\[8pt] {\Large \elasesor}
+
+    \vspace{2.5cm}
+\begin{flushright}
+    \textbf{Ciudad Universitaria, Cd. Mx., \lafecha}
+\end{flushright}
+
+  \end{center}
+\end{minipage}
+
+%\newpage
+%\thispagestyle{empty}
+%\cleardoublepage
+\clearpage
+\thispagestyle{empty}
+\hphantom{1cm}
+\pagebreak
+\newpage
+%\endinput  % Temporal, mientras se decide lo de la hoja de firmas
+
+%*********************************************************
+%* Hoja de firmas                         ------------ RRP
+%* Probablemente ya no se use:  2007-II
+
+\thispagestyle{empty}
+
+
+
+\begin{changemargin}{3cm}{-1.5cm}
+\begin{tabbing}
+\\ \\ \\Jurado asignado\\ \\ \\ \\
+Presidente: \= \hspace*{1.3cm}\elpresidente \\ \\
+Secretario: \> \hspace*{1.3cm}\elsecretario \\ \\
+Vocal: \> \hspace*{1.3cm}\elasesor \\ \\
+1$^{er}$ suplente: \> \hspace*{1.3cm}\elsuplentea \\ \\
+2${^{do}}$ suplente: \> \hspace*{1.3cm}\elsuplenteb \\ \\
+\end{tabbing}
+\medskip\medskip\medskip\medskip
+
+\noindent Ciudad Universitaria, Departamento (Nombre de Dpto).\\
+
+\noindent Ciudad de México\\ \\ \\ \\ \\ \\ \\ \\
+\begin{center}
+\noindent Directora de tesis\\
+\bigskip\bigskip\bigskip\bigskip\bigskip\bigskip\bigskip\bigskip\bigskip\bigskip
+\rule{10cm}{0.1mm}\\
+\noindent \elasesor
+\end{center}
+\end{changemargin}
+\newpage
+\endinput
